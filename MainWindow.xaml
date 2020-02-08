@@ -1,0 +1,32 @@
+﻿<Window x:Class="VideoClub.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VideoClub"
+        mc:Ignorable="d"
+        Title="Version Original" Height="600" Width="1000">
+    <Grid>
+        <TabControl>
+            <TabControl.Background>
+                <ImageBrush ImageSource="/Asset/bg.jpg" />
+            </TabControl.Background>
+            <TabItem Name="tab_alquileres" Header="Administrar Los Alquileres" Width="245" Margin="0">
+                <Frame Source="/View/AlquilerPagina.xaml" Margin="80,10,80,10">
+                </Frame>
+            </TabItem>
+            <TabItem Name="tab_productos" Header="Administrar Los Productos" Width="245" Margin="0">
+                <Frame Source="/View/ProductoPagina.xaml" Margin="80,10,80,10">
+                </Frame>
+            </TabItem>
+            <TabItem Name="tab_clientes" Header="Administrar Los Clientes" Width="245" Margin="0">
+                <Frame Source="/View/ClientePagina.xaml" Margin="80,10,80,10">
+                </Frame>
+            </TabItem>
+            <TabItem Name="tab_stats" Header="Resumen De Ingresos" Width="245" Margin="0">
+                <Frame Source="/View/StatsPagina.xaml" Margin="80,10,80,10">
+                </Frame>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

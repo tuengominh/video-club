@@ -1,0 +1,28 @@
+﻿<Page x:Class="VideoClub.Views.AlquilerPagina"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:VideoClub.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="800"
+      Title="AlquilerPagina">
+
+    <Grid Background="White">
+        <TextBlock x:Name="titleAlquiler" Background="#FFF36048" Foreground="White" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Talebro de Alquileres" VerticalAlignment="Top" Width="800" Height="36" FontSize="24" TextAlignment="Center" FontStretch="ExtraCondensed" FontFamily="Segoe UI Semilight" FontWeight="Bold" Margin="0,10,0,0"/>
+        <TabControl x:Name="tabControlProducto" HorizontalAlignment="Center" Height="444" Margin="0,46,0,0" VerticalAlignment="Top" Width="800" BorderThickness="0">
+            <TabItem Name="anadirAlquiler" Header="Anadir Alquiler" VerticalAlignment="Top" Width="265" BorderThickness="0">
+                <Frame Source="/View/AnadirAlquilerPagina.xaml" Margin="0">
+                </Frame>
+            </TabItem>
+            <TabItem Name="regresarAlquiler" Header="Regresar Alquiler" VerticalAlignment="Top" Width="265" BorderThickness="0">
+                <Frame Source="/View/RegresarAlquilerPagina.xaml" Margin="0">
+                </Frame>
+            </TabItem>
+            <TabItem Name="getTodos" Header="Mostrar Alquileres" VerticalAlignment="Top" Width="266" BorderThickness="0">
+                <Frame Source="/View/TodosAlquileresPagina.xaml" Margin="0">
+                </Frame>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Page>

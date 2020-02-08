@@ -1,0 +1,46 @@
+﻿<Page x:Class="VideoClub.View.RegresarAlquilerPagina"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:VideoClub.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RegresarAlquilerPagina">
+
+    <Grid Background="White">
+
+        <Label Content="Codigo de Alquiler:" HorizontalAlignment="Left" Margin="67,22,0,0" VerticalAlignment="Top" FontStretch="ExtraCondensed" FontFamily="Segoe UI Bold"/>
+        <TextBox x:Name="id" HorizontalAlignment="Left" Height="23" Margin="259,25,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="352" FontStretch="ExtraCondensed" FontFamily="Segoe UI Semilight"/>
+        <Button x:Name="btnBuscar" Background="#FFF36048" Foreground="White" BorderThickness="0" Content="Buscar" HorizontalAlignment="Left" Margin="633,25,0,0" VerticalAlignment="Top" Width="83" Height="23" Click="btnBuscar_Click"/>
+
+        <Canvas x:Name="canvas" Background="#FFF0F0F0" HorizontalAlignment="Left" Height="267" Margin="0,71,0,0" VerticalAlignment="Top" Width="800">
+
+            <TextBox x:Name="nombreYApellidos" IsEnabled="False" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="227" FontStretch="ExtraCondensed" FontFamily="Segoe UI Semilight" Canvas.Left="207" Canvas.Top="33"/>
+            <Label Content="Nombre de Cliente:" HorizontalAlignment="Left" VerticalAlignment="Top" FontStretch="ExtraCondensed" FontFamily="Segoe UI Bold" Canvas.Left="67" Canvas.Top="30"/>
+            <TextBox x:Name="clienteId" IsEnabled="False" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="106" FontStretch="ExtraCondensed" FontFamily="Segoe UI Semilight" Canvas.Left="610" Canvas.Top="33"/>
+            <Label Content="Codigo de Cliente:" HorizontalAlignment="Left" VerticalAlignment="Top" FontStretch="ExtraCondensed" FontFamily="Segoe UI Bold" Canvas.Left="462" Canvas.Top="30"/>
+
+            <TextBox x:Name="titulo" IsEnabled="False" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="227" FontStretch="ExtraCondensed" FontFamily="Segoe UI Semilight" Canvas.Left="207" Canvas.Top="79"/>
+            <Label Content="Titulo de Producto:" HorizontalAlignment="Left" VerticalAlignment="Top" FontStretch="ExtraCondensed" FontFamily="Segoe UI Bold" Canvas.Left="67" Canvas.Top="76"/>
+            <TextBox x:Name="productoId" IsEnabled="False" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="106" FontStretch="ExtraCondensed" FontFamily="Segoe UI Semilight" Canvas.Left="610" Canvas.Top="79"/>
+            <Label Content="Codigo de Producto:" HorizontalAlignment="Left" VerticalAlignment="Top" FontStretch="ExtraCondensed" FontFamily="Segoe UI Bold" Canvas.Left="462" Canvas.Top="76"/>
+
+            <TextBox x:Name="fechaDeAlquiler" IsEnabled="False" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="509" FontStretch="ExtraCondensed" FontFamily="Segoe UI Semilight" Canvas.Left="207" Canvas.Top="125"/>
+            <Label Content="Fecha de Alquiler:" HorizontalAlignment="Left" VerticalAlignment="Top" FontStretch="ExtraCondensed" FontFamily="Segoe UI Bold" Canvas.Left="67" Canvas.Top="122"/>
+            <TextBox x:Name="tiempoDeAlquiler" IsEnabled="False" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="182" FontStretch="ExtraCondensed" FontFamily="Segoe UI Semilight" Canvas.Left="207" Canvas.Top="169"/>
+            <Label Content="Tiempo (Dias):" HorizontalAlignment="Left" VerticalAlignment="Top" FontStretch="ExtraCondensed" FontFamily="Segoe UI Bold" Canvas.Left="67" Canvas.Top="166"/>
+            <TextBox x:Name="estado" IsEnabled="False" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="182" FontStretch="ExtraCondensed" FontFamily="Segoe UI Semilight" Canvas.Left="534" Canvas.Top="169"/>
+            <Label Content="Estado:" HorizontalAlignment="Left" VerticalAlignment="Top" FontStretch="ExtraCondensed" FontFamily="Segoe UI Bold" Canvas.Left="426" Canvas.Top="166"/>
+
+            <TextBox x:Name="descuento" IsEnabled="False" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="182" FontStretch="ExtraCondensed" FontFamily="Segoe UI Semilight" Canvas.Left="207" Canvas.Top="216"/>
+            <Label Content="Descuento:" HorizontalAlignment="Left" VerticalAlignment="Top" FontStretch="ExtraCondensed" FontFamily="Segoe UI Bold" Canvas.Left="67" Canvas.Top="213"/>
+            <TextBox x:Name="pago" IsEnabled="False" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="182" FontStretch="ExtraCondensed" FontFamily="Segoe UI Semilight" Canvas.Left="534" Canvas.Top="216"/>
+            <Label Content="Total Pago:" HorizontalAlignment="Left" VerticalAlignment="Top" FontStretch="ExtraCondensed" FontFamily="Segoe UI Bold" Canvas.Left="426" Canvas.Top="213"/>
+        
+        </Canvas>
+
+        <Button x:Name="btnRegresar" Background="#FFF36048" Foreground="White" BorderThickness="0" Content="Regresar" HorizontalAlignment="Left" Margin="349,358,0,0" VerticalAlignment="Top" Width="116" Height="24" Click="btnRegresar_Click"/>
+
+    </Grid>
+</Page>

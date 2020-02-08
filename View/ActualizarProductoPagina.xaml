@@ -1,0 +1,50 @@
+﻿<Page x:Class="VideoClub.View.ActualizarProductoPagina"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:VideoClub.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ActualizarProductoPagina">
+
+    <Grid Background="White">
+
+        <Label Content="Codigo de Producto:" HorizontalAlignment="Left" Margin="67,22,0,0" VerticalAlignment="Top" FontStretch="ExtraCondensed" FontFamily="Segoe UI Bold"/>
+        <TextBox x:Name="id" HorizontalAlignment="Left" Height="23" Margin="206,25,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="405" FontStretch="ExtraCondensed" FontFamily="Segoe UI Semilight"/>
+        <Button x:Name="btnBuscar" Background="#FF48CEF5" Foreground="White" BorderThickness="0" Content="Buscar" HorizontalAlignment="Left" Margin="633,25,0,0" VerticalAlignment="Top" Width="83" Height="23" Click="btnBuscar_Click"/>
+
+        <Canvas x:Name="canvas" Background="#FFF0F0F0" HorizontalAlignment="Left" Height="267" Margin="0,71,0,0" VerticalAlignment="Top" Width="800">
+            <TextBox x:Name="titulo" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="509" FontStretch="ExtraCondensed" FontFamily="Segoe UI Semilight" Canvas.Left="207" Canvas.Top="24"/>
+            <Label Content="Titulo:" HorizontalAlignment="Left" VerticalAlignment="Top" FontStretch="ExtraCondensed" FontFamily="Segoe UI Bold" Canvas.Left="67" Canvas.Top="21"/>
+
+            <TextBox x:Name="tipo" IsEnabled="False" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="509" FontStretch="ExtraCondensed" FontFamily="Segoe UI Semilight" Canvas.Left="207" Canvas.Top="74"/>
+            <Label Content="Tipo:" HorizontalAlignment="Left" VerticalAlignment="Top" FontStretch="ExtraCondensed" FontFamily="Segoe UI Bold" Canvas.Left="67" Canvas.Top="71"/>
+
+            <TextBox x:Name="noDeCopias" IsEnabled="False" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="115" FontStretch="ExtraCondensed" FontFamily="Segoe UI Semilight" Canvas.Left="207" Canvas.Top="121"/>
+            <Label Content="No. de Copias:" HorizontalAlignment="Left" VerticalAlignment="Top" FontStretch="ExtraCondensed" FontFamily="Segoe UI Bold" Canvas.Left="67" Canvas.Top="118"/>
+            <TextBox x:Name="cantidad" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="121" FontStretch="ExtraCondensed" FontFamily="Segoe UI Semilight" Canvas.Left="491" Canvas.Top="121"/>
+            <Label Content="Unidades para anadir:" HorizontalAlignment="Left" VerticalAlignment="Top" FontStretch="ExtraCondensed" FontFamily="Segoe UI Bold" Canvas.Left="341" Canvas.Top="121"/>
+            <Button x:Name="btnAnadirCopia" Background="#FF48CEF5" Foreground="White" BorderThickness="0" Content="Anadir Copia" HorizontalAlignment="Left" Canvas.Left="633" Canvas.Top="121" VerticalAlignment="Top" Width="83" Height="23" Click="btnAnadirCopia_Click"/>
+
+            <TextBox x:Name="duracion" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="78" FontStretch="ExtraCondensed" FontFamily="Segoe UI Semilight" Canvas.Left="207" Canvas.Top="171"/>
+            <Label Content="Duracion (Minutos):" HorizontalAlignment="Left" VerticalAlignment="Top" FontStretch="ExtraCondensed" FontFamily="Segoe UI Bold" Canvas.Left="67" Canvas.Top="168"/>
+            <TextBox x:Name="anoProduccion" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="77" FontStretch="ExtraCondensed" FontFamily="Segoe UI Semilight" Canvas.Left="436" Canvas.Top="171"/>
+            <Label Content="Ano de Produccion:" HorizontalAlignment="Left" VerticalAlignment="Top" FontStretch="ExtraCondensed" FontFamily="Segoe UI Bold" Canvas.Left="300" Canvas.Top="168"/>
+            <TextBox x:Name="anoCompra" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="79" FontStretch="ExtraCondensed" FontFamily="Segoe UI Semilight" Canvas.Left="637" Canvas.Top="171"/>
+            <Label Content="Ano de Compra:" HorizontalAlignment="Left" VerticalAlignment="Top" FontStretch="ExtraCondensed" FontFamily="Segoe UI Bold" Canvas.Left="531" Canvas.Top="168"/>
+
+            <Label Content="Plataforma:" HorizontalAlignment="Left" VerticalAlignment="Top" FontStretch="ExtraCondensed" FontFamily="Segoe UI Bold" Canvas.Left="67" Canvas.Top="215"/>
+
+            <RadioButton x:Name="btnPC" Content="PC" Canvas.Left="205" Canvas.Top="221"/>
+            <RadioButton x:Name="btnXbox" Content="Xbox" Canvas.Left="300" Canvas.Top="221"/>
+            <RadioButton x:Name="btnPS2" Content="PS2" Canvas.Left="406" Canvas.Top="221"/>
+            <RadioButton x:Name="btnPS3" Content="PS3" Canvas.Left="511" Canvas.Top="221"/>
+            <RadioButton x:Name="btnWii" Content="Wii" Canvas.Left="610" Canvas.Top="221"/>
+            
+        </Canvas>
+
+        <Button x:Name="btnActualizar" Background="#FF48CEF5" Foreground="White" BorderThickness="0" Content="Actualizar" HorizontalAlignment="Left" Margin="349,358,0,0" VerticalAlignment="Top" Width="116" Height="24" Click="btnActualizar_Click"/>
+
+    </Grid>
+</Page>
